@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>index</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <header>
+        This is header, it is completely different from head tag.
+        It separates section for the header part.
+    </header>
+    <nav>
+        This is a navigation tag it separates the screen portion
+        for some links for other pages.
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <article>
+        this is article
+        <section>
+            this is section it is not compulsory to be used section inside
+            article tag.
+        </section>
+    </article>
+    <!--after article there comes aside most prolly-->
+    <aside> Make this aside</aside>
+    <audio src="audio.mp3" controls>audio element not supported
+        by ur browser
+    </audio><br>
+    <!--also audio can be written as:-->
+    <audio>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <!--audio also supports autoplay loop -->
+        <!--also audio supports currently 3 file formats mp3, wav, ogg-->
+        <!--same for video-->
+
+    </audio>
+    <video src="blabla.mp4" controls>this is displayed only when
+        browser doesn't support
+    </video>
+    Status:<progress min="0" max="100" value="35">
+        The progress element can be used within headings, paragraphs, or anywhere else in the body.
+
+    </progress><br>
+    <p>With HTML5 web storage, websites can store data on a user's local computer.
+        Before HTML5, we had to use JavaScript cookies to achieve this functionality.
+
+        The Advantages of Web Storage
+        - More secure
+        - Faster
+        - Stores a larger amount of data
+        - Stored data is not sent with every server request
+        Local storage is per domain. All pages from one domain can
+        store and access the same data.</p>
+    <br>
+    <p>- Session Storage is destroyed once the user closes the browser
+        - Local Storage stores data with no expiration date <br></p>
+    <p>
+        In HTML5, the Geolocation API is used to obtain the user's geographical location.
+
+        Since this can compromise user privacy, the option is not available unless the user approves it.
+        Geolocation is much more accurate for devices with GPS, like smartphones and the like.
+    </p>
+    <p>
+        The drag and drop feature lets you "grab" an object and drag it to a different location.
+        To make an element draggable, just set the draggable attribute to true:
+        <!--<img draggable="true" />-->
+    </p>
+    <p>
+
+
+        To draw shapes with SVG, you first need to create an SVG element tag with two attributes: width and height.
+        svg width="1000" height="1000"></svg>
+        HTML
+        To create a circle, add a <circle> tag:
+            - cx pushes the center of the circle further to the right of the screen
+            - cy pushes the center of the circle further down from the top of the screen
+            - r defines the radius
+            - fill determines the color of our circle
+            - stroke adds an outline to the circle
+
+    </p>
+    <p>
+        <svg width="2000" height="2000">
+            <circle cx="80" cy="80" r="50" fill="green" />
+        </svg>
+    </p>
+    <p>
+        Shape Animations
+
+
+SVG animations can be created using the <animate> element.
+
+The example below creates a rectangle that will change its position in 3 seconds and will then repeat the animation twice:
+attributeName: Specifies which attribute will be affected by the animation
+from: Specifies the starting value of the attribute
+to: Specifies the ending value of the attribute
+dur: Specifies how long the animation runs (duration)
+fill: Specifies whether or not the attribute's value should return to its initial value when the animation is finished (Values: "remove" resets the value; "freeze" keeps the “to value”)
+repeatCount: Specifies the repeat count of the animation
+
+In the example above, the rectangle changes its x attribute from 0 to 300 in 3 seconds.
+To repeat the animation indefinitely, use the value "indefinite" for the repeatCount attribute.
+    </p>
+    <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="300"
+          dur="3s" fill="freeze" repeatCount="2"/> 
+        </rect>
+    </svg>
+    <p>
+        <svg width="500" height="500">
+            <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+            </svg>
+    </p>
+    <div id="intro">
+        <p> This paragraph is in the intro section.</p>
+    </div>
+    <p> This paragraph is not in the intro section.</p>
+    <div>
+        <p class="first">This is a paragraph</p>
+        <p> This is the second paragraph. </p>
+    </div>
+    <p class="first"> This is not in the intro section</p>
+    <p> The second paragraph is not in the intro section. </p>
+    <p>
+        The text-shadow Property
+
+
+The text-shadow property adds shadow to text.
+It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, and the fourth value sets the color.
+
+The HTML:
+<h1>Text-shadow example</h1>
+HTML
+The CSS:
+In the example above, we created a shadow using the following parameters:
+5px – the X-coordinate
+2px – the Y-coordinate
+4px – the blur radius
+grey – the color of the shadow
+    </p>
+    <footer>
+        Here it's the footer. it mostly includes copyright icons
+        social media icons etc.
+    </footer>
+</body>
+
+</html>

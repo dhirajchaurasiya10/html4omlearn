@@ -1,0 +1,24 @@
+.wrapper {
+    height: 4vh;
+    display: grid;
+    place-items: left; /*inorder to change the postition adjust height accordingly*/
+}
+.typing-demo {
+    width: 20ch; /*reduce or increase this as per the words length*/
+    animation: typing 1s steps(40), blink .3s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: Tw Cen MT;
+    font-size: 2em;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }    
+}
+@keyframes blink {
+    5% {
+        border-color: transparent;
+    }
+}

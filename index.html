@@ -1,0 +1,354 @@
+<html>
+
+<head>
+    <title>index</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <header>
+        This is header, it is completely different from head tag.
+        It separates section for the header part.
+    </header>
+    <nav>
+        This is a navigation tag it separates the screen portion
+        for some links for other pages.
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <article>
+        this is article
+        <section>
+            this is section it is not compulsory to be used section inside
+            article tag.
+        </section>
+    </article>
+    <!--after article there comes aside most prolly-->
+    <aside> Make this aside</aside>
+    <audio src="audio.mp3" controls>audio element not supported
+        by ur browser
+    </audio><br>
+    <!--also audio can be written as:-->
+    <audio>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <!--audio also supports autoplay loop -->
+        <!--also audio supports currently 3 file formats mp3, wav, ogg-->
+        <!--same for video-->
+
+    </audio>
+    <video src="blabla.mp4" controls>this is displayed only when
+        browser doesn't support
+    </video>
+    Status:<progress min="0" max="100" value="35">
+        The progress element can be used within headings, paragraphs, or anywhere else in the body.
+
+    </progress><br>
+    <p>With HTML5 web storage, websites can store data on a user's local computer.
+        Before HTML5, we had to use JavaScript cookies to achieve this functionality.
+
+        The Advantages of Web Storage
+        - More secure
+        - Faster
+        - Stores a larger amount of data
+        - Stored data is not sent with every server request
+        Local storage is per domain. All pages from one domain can
+        store and access the same data.</p>
+    <br>
+    <p>- Session Storage is destroyed once the user closes the browser
+        - Local Storage stores data with no expiration date <br></p>
+    <p>
+        In HTML5, the Geolocation API is used to obtain the user's geographical location.
+
+        Since this can compromise user privacy, the option is not available unless the user approves it.
+        Geolocation is much more accurate for devices with GPS, like smartphones and the like.
+    </p>
+    <p>
+        The drag and drop feature lets you "grab" an object and drag it to a different location.
+        To make an element draggable, just set the draggable attribute to true:
+        <!--<img draggable="true" />-->
+    </p>
+    <p>
+
+
+        To draw shapes with SVG, you first need to create an SVG element tag with two attributes: width and height.
+        svg width="1000" height="1000"></svg>
+        HTML
+        To create a circle, add a <circle> tag:
+            - cx pushes the center of the circle further to the right of the screen
+            - cy pushes the center of the circle further down from the top of the screen
+            - r defines the radius
+            - fill determines the color of our circle
+            - stroke adds an outline to the circle
+
+    </p>
+    <p>
+        <svg width="2000" height="2000">
+            <circle cx="80" cy="80" r="50" fill="green" />
+        </svg>
+    </p>
+    <p>
+        Shape Animations
+
+
+SVG animations can be created using the <animate> element.
+
+The example below creates a rectangle that will change its position in 3 seconds and will then repeat the animation twice:
+attributeName: Specifies which attribute will be affected by the animation
+from: Specifies the starting value of the attribute
+to: Specifies the ending value of the attribute
+dur: Specifies how long the animation runs (duration)
+fill: Specifies whether or not the attribute's value should return to its initial value when the animation is finished (Values: "remove" resets the value; "freeze" keeps the “to value”)
+repeatCount: Specifies the repeat count of the animation
+
+In the example above, the rectangle changes its x attribute from 0 to 300 in 3 seconds.
+To repeat the animation indefinitely, use the value "indefinite" for the repeatCount attribute.
+    </p>
+    <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="300"
+          dur="3s" fill="freeze" repeatCount="2"/> 
+        </rect>
+    </svg>
+    <p>
+        <svg width="500" height="500">
+            <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+            </svg>
+    </p>
+    <div id="intro">
+        <p> This paragraph is in the intro section.</p>
+    </div>
+    <p> This paragraph is not in the intro section.</p>
+    <div>
+        <p class="first">This is a paragraph</p>
+        <p> This is the second paragraph. </p>
+    </div>
+    <p class="first"> This is not in the intro section</p>
+    <p> The second paragraph is not in the intro section. </p>
+    <p>
+        The text-shadow Property
+
+
+The text-shadow property adds shadow to text.
+It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, and the fourth value sets the color.
+
+The HTML:
+<h1>Text-shadow example</h1>
+HTML
+The CSS:
+In the example above, we created a shadow using the following parameters:
+5px – the X-coordinate
+2px – the Y-coordinate
+4px – the blur radius
+grey – the color of the shadow
+    </p>
+    <p>
+        <br><hr>
+
+The text-transform CSS property specifies how to capitalize an element's text. For example, it can be used to make text appear with each word capitalized.
+
+The HTML:
+<p class="capitalize">
+    The value capitalize transforms the first 
+    character in each word to uppercase; 
+    all other characters remain unaffected.
+</p>
+<p><br><hr>letter-spacingfor the space in letters and word spacing for word-space in the words <br><hr>
+    
+
+The word-spacing property specifies the space between words in a text. Just like the letter-spacing property, you can set the word-spacing values as normal, length, and inherit.
+
+The HTML:
+<p class="normal">This paragraph has no additional word-spacing applied.</p>
+<p class="px">This paragraph is word-spaced at 30px.</p>
+HTML
+The CSS: <br><hr>
+<p class="first">
+    Border color has been created using <strong>color name.</strong>
+</p>
+<p class="second">
+    Border color has been created using <strong>Hex values.</strong> 
+</p>
+<p class="third">
+    Border color has been created using <strong>RGB values.</strong> 
+</p>
+</p>
+<p>The list style property : <br>
+    ul { <br>
+    list-style-type : square;   <br>
+    list-style-position : outside; <br>
+    list-style-image : none;        <br>
+    } OR It Can Also Be Written as  <br>
+    ul {                            <br>
+        list-style : square outside none; <br>
+    }                               <br>
+
+</p>
+<p>
+    
+The look of an HTML table can be greatly improved with CSS.
+
+The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. If the borders are separate, the border-spacing property can be used to change the spacing.
+
+The HTML:
+<table border="1">
+   <tr>
+     <td>Red</td>
+     <td>Green</td>
+   </tr>
+   <tr>
+      <td>Blue</td>
+      <td>Yellow</td>
+   </tr><br>
+   The CSS: <br> 
+   table { <br>
+    border-collapse : separate; <br>
+    border-spacing : 20px 40px; <br>
+   } <br>
+</table>
+This is how it would look like after css effect: 
+<img src="https://api.sololearn.com/DownloadFile?id=2637" alt="img">
+</p>
+<p>
+    The caption-side Property
+
+
+The caption-side property specifies the position of a table caption. The values can be set as top or bottom.
+In the example below, we specify the placement of a table caption to top.
+
+The HTML:
+<table border="1">
+<caption>Some of Our Courses</caption>
+<tr>
+  <th>Course name</th>
+  <th>Lessons</th>
+  <th>Quizzes</th>
+</tr>
+<tr>
+  <td>C++</td>
+  <td>81</td>
+  <td>363</td>
+</tr>
+<tr>
+  <td>JavaScript</td>
+  <td>48</td>
+  <td>144</td>
+</tr>
+<tr>
+  <td>HTML</td>
+  <td>38</td>
+  <td>119</td>
+</tr>
+<tr>
+  <td>CSS</td>
+  <td>70</td>
+  <td>174</td>
+</tr>
+</table>
+The css would be :  <br> caption { <br> caption-side: top; <br> } <br>
+& output would be <img src="https://api.sololearn.com/DownloadFile?id=2638" alt="">
+</p>
+<p>
+    The empty-cells Property
+
+
+The empty-cells property specifies whether or not to display borders and background on empty cells in a table.
+Possible values are:
+show: the borders of an empty cell are rendered
+hide: the borders of an empty cell are not drawn
+
+Here is the empty-cells property that is used to hide borders of empty cells in the <table> element.
+
+The HTML:
+<table border="1">
+  <tr>
+    <td>HTML</td>
+    <td>CSS</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td></td>
+  </tr>
+</table>
+css: <br> table { <br> border-collapse: separate; <br>
+     empty-cells: hide; <br> } <br>
+     & output: 
+     <img src="https://api.sololearn.com/DownloadFile?id=2639" alt="">
+</p>
+<p>
+    
+The table-layout specifies how the width of table columns is calculated. The possible values are:
+auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+
+The table layout is set to auto by default.
+The example below shows the difference between auto and fixed.
+
+The HTML:
+<p>Table-layout is set to <strong>auto</strong></p>
+<table class="auto">
+  <tr>
+    <td width=“10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>Table-layout is set to <strong>fixed</strong></p>
+<table class="fixed">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+css : table { <br> border-collapse: separate <br> width: 100% <br>
+border: 1px solid gray; <br> } <br>
+td {
+     border: 1 px solid gray; <br> 
+}
+table.auto { <br>table-layout: auto <br> } <br>
+table.fixed { <br>table-layout: fixed <br> } <br>
+<img src="https://api.sololearn.com/DownloadFile?id=2640" alt="">
+</p>
+<p>
+    Setting Styles to Links
+
+
+Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+In addition, links can be styled differently, depending on what state they are in. The following pseudo selectors are available:
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+
+The example below creates a link that will change the style when the mouse is moved over it.
+
+The HTML:
+<p><a href="http://www.sololearn.com" target="_blank">
+   This link is hovered when we mouse over it
+</a></p>
+css: <br> a: hover { <br> color: red; <br> } <br>
+note: When setting the style for several link states, there are some order rules: <br>
+- a:hover MUST come after a:link and a:visited <br>
+- a:active MUST come after a:hover <br>
+</p>
+<p>By default the links are underlined by browser <br>
+    to remove the underline <b> text-decoration </b> is used. <br>
+    css: <br> a:link { <br>
+        text-decoration: none; <br>
+    } <br>
+    The following properties are used to control the look and feel of links: <br>
+<b>border:none</b> - removes border from images with links <br>
+ <b>outline:none </b> - removes the dotted border on clicked lines in IE <br>
+</p>
+<p>css allows to set desired cursor style when your mouse is hovered
+    code: <span style="cursor:help;"> &nbsp;&nbsp;&nbsp; Do you need help?</span><br>
+    <img src="https://api.sololearn.com/DownloadFile?id=2983" alt="">
+</p>
+    <footer>
+        Here it's the footer. it mostly includes copyright icons
+        social media icons etc.
+    </footer>
+</body>
+
+</html>
